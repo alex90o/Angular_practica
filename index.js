@@ -48,7 +48,7 @@ var MenuChicos = /** @class */ (function (_super) {
     MenuChicos.prototype.listar = function () {
         this.display = "<h3>Nuestro menu especial para los chicos: </h3>";
         this.display += '<ul>';
-        for (var i = 0; this.items.length; i++) {
+        for (var i = 0; i < this.items.length; i++) {
             this.display += "<li>".concat(this.items[i], "</li>");
         }
         this.display += '</ul>';

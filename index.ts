@@ -38,7 +38,7 @@ class MenuChicos extends Menu {
     listar(): void {
         this.display = `<h3>Nuestro menu especial para los chicos: </h3>`;
         this.display += '<ul>';
-        for(var i=0; this.items.length; i++){
+        for(var i=0;i< this.items.length; i++){
             this.display += `<li>${this.items[i]}</li>`;
         }
         this.display += '</ul>';
