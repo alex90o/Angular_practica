@@ -58,3 +58,13 @@ var MenuChicos = /** @class */ (function (_super) {
 }(Menu));
 var menuChicos = new MenuChicos(['caramelo', 'Coca Cola', 'juguete']);
 menuChicos.listar();
+function obtenerMenuEmpleado(comida) {
+    var display = '';
+    display = "<p>El Men\u00FA de los empleados teiene ".concat(comida.calorias, " calorias. Y est\u00E1 compuesta por ").concat(comida.nombre, " </p>");
+    document.querySelector("#interface").innerHTML = display;
+}
+var helado = {
+    nombre: 'Helado',
+    calorias: 400
+};
+obtenerMenuEmpleado(helado);

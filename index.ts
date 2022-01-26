@@ -47,3 +47,19 @@ class MenuChicos extends Menu {
 }
 var menuChicos = new MenuChicos (['caramelo', 'Coca Cola', 'juguete']);
 menuChicos.listar();
+
+interface MenuEmpleado {
+    nombre: string;
+    calorias: number;
+}
+
+function obtenerMenuEmpleado (comida: MenuEmpleado): void {
+    let display = '';
+    display = `<p>El Menú de los empleados teiene ${comida.calorias} calorias. Y está compuesta por ${comida.nombre} </p>`;
+    document.querySelector("#interface").innerHTML = display;
+}
+const helado = {
+    nombre: 'Helado',
+    calorias: 400
+}
+obtenerMenuEmpleado(helado);
