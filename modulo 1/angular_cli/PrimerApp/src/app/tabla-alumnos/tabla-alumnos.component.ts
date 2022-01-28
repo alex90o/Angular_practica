@@ -14,7 +14,8 @@ class Alumno {
 const Alumnos = [
   new Alumno('Jose', 'Perez', 'PHP'),
   new Alumno ('Mariela', 'Gonzalez', 'Angular'),
-  new Alumno ('tito', 'ovejero', 'saltos')
+  new Alumno ('tito', 'ovejero', 'saltos'),
+  new Alumno ('negra', 'labrador', 'comer')
 ];
 
 @Component({
@@ -23,7 +24,7 @@ const Alumnos = [
   styleUrls: ['./tabla-alumnos.component.css']
 })
 export class TablaAlumnosComponent implements OnInit {
-
+  alumnos:Alumno [] = Alumnos;
   constructor() { }
 
   ngOnInit(): void {
