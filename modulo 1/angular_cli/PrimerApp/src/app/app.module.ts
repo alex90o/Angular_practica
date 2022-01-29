@@ -6,12 +6,15 @@ import { HomeComponent} from './home/home.componet';
 import { TablaAlumnosComponent } from './tabla-alumnos/tabla-alumnos.component';
 import { ReactivoComponent } from './reactivo/reactivo.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormDrivenComponent } from './form-driven/form-driven.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TablaAlumnosComponent,
-    ReactivoComponent
+    ReactivoComponent,
+    FormDrivenComponent
   ],
   imports: [
     BrowserModule,

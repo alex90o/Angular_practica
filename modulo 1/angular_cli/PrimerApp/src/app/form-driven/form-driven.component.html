@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <h1>Formulario de Peliculas</h1>
+    <form>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text"  id="nombre" class="form-control" required name="nombre" [(ngModel)]="model.nombre">
+        </div>
+        <div class="form-group">
+          <label for="director">Director</label>
+          <input type="text"  id="director" class="form-control" name="director">
+        </div>
+        <div class="form-group">
+          <label for="genero">Genero</label>
+          <select   id="genero" class="form-control" name="genero">
+            <option> Seleccione ...</option>
+          </select>
+        </div>
+        <br>
+
+        <button type="submit" class="btn btn-success">Enviar</button>
+
+    </form>
+    <pre>{{model | json}}</pre>
+
+</div>
