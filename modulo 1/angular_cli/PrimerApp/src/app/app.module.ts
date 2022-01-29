@@ -8,6 +8,7 @@ import { ReactivoComponent } from './reactivo/reactivo.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormDrivenComponent } from './form-driven/form-driven.component';
 import { SubmitComponent } from './submit/submit.component';
+import { ValidarReactivoComponent } from './validar-reactivo/validar-reactivo.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SubmitComponent } from './submit/submit.component';
     TablaAlumnosComponent,
     ReactivoComponent,
     FormDrivenComponent,
-    SubmitComponent
+    SubmitComponent,
+    ValidarReactivoComponent
   ],
   imports: [
     BrowserModule,

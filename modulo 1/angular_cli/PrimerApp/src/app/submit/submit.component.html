@@ -1,1 +1,30 @@
-<p>submit works!</p>
+<div class="container">
+  <h2>NgSubmit</h2>
+  <div class="row">
+    <div class="col-6">
+  <form #regForm='ngForm' (ngSubmit)='Registrar(regForm)'>
+      <h4>Registro</h4>
+      <br/>
+      <div class="form-group">
+        <input type="text"  id="nombre-registrar" class="form-control" placeholder="Nombre" value="NACU">
+      </div>
+      <div class="form-group">
+
+        <input type="text"  id="apellido" class="form-control" placeholder="Apellido" value="apellido">
+      </div>
+      <div class="form-group">
+
+        <input type="email" class="form-control" placeholder="email" value="email">
+      </div>
+      <br>
+      <DIv class="align-center">
+        <button type="submit" class="btn btn-primary" id="registrar" >Registrar</button>
+      </DIv>
+
+  </form>
+
+
+</div>
+</div>
+</div>
+
