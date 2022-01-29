@@ -7,12 +7,12 @@
         </div>
         <div class="form-group">
           <label for="director">Director</label>
-          <input type="text"  id="director" class="form-control" name="director">
+          <input type="text"  id="director" class="form-control" name="director" [(ngModel)]="model.director">
         </div>
         <div class="form-group">
           <label for="genero">Genero</label>
           <select   id="genero" class="form-control" name="genero">
-            <option> Seleccione ...</option>
+            <option *ngFor="let genero of generos" [value]="genero">{{genero}}</option>
           </select>
         </div>
         <br>

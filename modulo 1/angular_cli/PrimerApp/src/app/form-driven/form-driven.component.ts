@@ -13,7 +13,7 @@ class Pelicula {
   styleUrls: ['./form-driven.component.css']
 })
 export class FormDrivenComponent implements OnInit {
-  generos = ["Accion" , "Terror", "Aventura", "Fantacia", "Misterio", "Drama"];
+  generos = ["Accion" , "Terror", "Aventura", "Fantacia", "Misterio", "Drama", "Infantil"];
   model = new Pelicula(1,'Grim', this.generos[3],'Mark Buckland')
   constructor() { }
 
